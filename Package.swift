@@ -12,6 +12,9 @@ let package = Package(
             targets: ["dependabot_swift_example"]
         ),
     ],
+    dependencies: [
+        .package(url: "https://github.com/ordo-one/benchmark", from: "1.30.0", traits: []),
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
